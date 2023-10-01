@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, Tahoma, Verdana;
+}
+
+body {
+    background-image: url(img/bg.jpg);
+    background-color: #040115;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ededed;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 5%;
+    background: #0000008f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.back {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #076ff7;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    background: #00000095;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 49px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #076ff7;
+}
+
+.home-content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+    text-align: justify;
+}
+
+.home-content .btn-box {
+    display: flex;
+    width: 200px;
+    height: 50px;
+}
+
+.img {
+    position: relative;
+    width: 380px;
+    height: auto;
+    filter: saturate(80%);
+    top: 24px;
+    left: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #076ff7;
+    border: 2px solid #076ff7;
+    border-radius: 8px;
+    font-size: 18px;
+    color: #040115;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:nth-child(1) {
+    background: #0000008f;
+    color: #076ff7;
+}
+
+.btn-box a:nth-child(1):hover {
+    color: #040115;
+}
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #076ff7;
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.medsos {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 150px;
+    margin: 10px 0;
+}
+
+.medsos a#whatsapp {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    background: transparent;
+    padding: 4px;
+    border: 2px solid #076ff7;
+    border-radius: 50%;
+    background: #076ff7;
+}
+
+.medsos a#facebook {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    background: transparent;
+    padding: 4px;
+    border: 2px solid #076ff7;
+    border-radius: 50%;
+    background: #076ff7;
+}
+
+.medsos a#instagram {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    background: transparent;
+    padding: 4px;
+    border: 2px solid #076ff7;
+    border-radius: 50%;
+    background: #076ff7;
+}
+
+.medsos a#telegram {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    background: transparent;
+    padding: 4px;
+    border: 2px solid #076ff7;
+    border-radius: 50%;
+    background: #076ff7;
+}
+
+.about {
+height: 150vh;
+display: block;
+padding: 0 5%;
+background: #00000095;
+}
+
+.aboutme li {
+    position: relative;
+    left:40px;
+}
+
+.aboutme h4 {
+    position: relative;
+    left: 20px;
+}
+
+.ket {
+    position: relative;
+    left: 20px;
+}
